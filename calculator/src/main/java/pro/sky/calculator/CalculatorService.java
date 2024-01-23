@@ -1,7 +1,6 @@
 package pro.sky.calculator;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 
 @Service
@@ -13,7 +12,6 @@ public class CalculatorService {
     }
 
     public String addition(int num1, int num2) {
-
         int sum = num1 + num2;
         return num1 + " + " + num2 + " = " + sum;
     }
@@ -29,7 +27,7 @@ public class CalculatorService {
     }
 
     public String division(int num1, int num2) {
-        if ((num2 == 0)){
+        if (num2 == 0){
             return "Division by zero";
         }
         else{
